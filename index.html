@@ -1,0 +1,37 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">CONNECT 4</h1> 
+    <div class="container">   
+      <div class="menu">
+        <h2>Game Menu</h2>
+          <div class="inputs-wrapper">
+            <h4>Add Height and Width to change into a new board layout, 
+            then click on update settings</h3>
+            <span>Height</span>
+            <input type="text" id='hInput' placeholder="Add New Height: 6">
+            <span>Width</span>
+            <input type="text" id='wInput' placeholder="Add New Width: 7">
+            <input type="submit" id='update' value='Update Settings'>
+            <input type="submit" id='reset' value='Reset All Data'>
+            <input type="submit" id='restart' value='Restart Game'>
+            </div>
+    </div>
+    <table id="board" class='stop'></table>
+    <div class="players">
+        <h2>Players</h2>
+        <p id='p1Icon'>Player 1: RED</p>
+        <p id='p2Icon'>Player 2: BLACK</p>
+        <h2 id='scores'>Scores(W-L)</h2>
+        <p id='p1'>Player 1: 0-0</p>
+        <p id='p2'>Player 2: 0-0</p>
+    </div>
+    </div>
+<script src="connect4.js"></script>
+</body>
+</html>

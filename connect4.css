@@ -1,0 +1,139 @@
+/* General Styles */
+
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 207px repeat(auto-fit, minmax(500px, 500px)) 215px;
+    grid-template-rows: 0;
+    grid-gap: 80px;
+  }
+  
+  body{
+    background: url('./bg.gif') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  /* Menu Styles */
+  .menu{
+    background: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    border: 5px solid black;
+  }
+  
+  h2, h3, h4, span, #p1, #p2, #p1Icon, #p2Icon, #restart, #submit, #hInput, #wInput{
+    font-family: 'Black Ops One', cursive;
+  }
+  
+  h2{
+    text-decoration: underline;
+    padding-left: 23px;
+  }
+  
+  h3{
+    margin-left: 30px;
+  }
+  
+  #restart, #update, #reset{
+    width: 195px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Black Ops One', cursive; 
+  }
+  
+  #update{
+    margin-top: 20px;
+  }
+  
+  /* Players */
+  .players{
+    background: rgba(255, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 5px solid black;
+  }
+  
+  #p1Icon, #p2Icon, #p1, #p2{
+    margin-left: 10px;
+  }
+  
+  #p1Icon, #p2Icon{
+    font-size: 20px;
+  }
+  
+  #p1, #p2{
+    font-size: 35px;
+    transform: translateY(-20px);
+  }
+  
+  #scores{
+    transform: translateX(-7px);
+  }
+  
+  
+  /* Title styles */
+  #title{
+    padding-top: 5vh;
+    font-family: 'Black Ops One', cursive;
+    font-size: 65px;
+    margin-left: 35%;
+  }
+  
+  .blink-text{
+    color: #000;
+    font-weight: bolder;
+    font-size: 2rem;
+    animation: blinkingText 1.1s infinite;
+  }
+  @keyframes blinkingText{
+    0%		{ color: #10c018;}
+    25%		{ color: #fffb00;}
+    50%		{ color: #ef0a1a;}
+    75%		{ color: #000000;}
+    100%	{ color: #04a1d5;}
+  }
+  
+  /* game board table */
+  
+  #board td {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #666;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  #board{
+    background: rgba(0, 0, 240, 0.3);
+  }
+  
+  .piece {
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  
+  .p1{
+    background: red;
+  }
+  
+  .p2{
+    background: black;
+  }
+  
+  /* column-top is table row of clickable areas for each column */
+  #column-top td {
+    border: dashed 5px black;
+    background-color: rgb(215, 241, 129);
+  }
+  
+  #column-top td:hover {
+    background-color: gold;
+  }
+  
+  /* Misc */
+  .stopClicks{
+    pointer-events: none;
+  }
